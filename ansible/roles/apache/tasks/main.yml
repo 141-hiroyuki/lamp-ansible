@@ -1,0 +1,16 @@
+---
+- name: Install httpd
+  sudo: yes
+  yum: name=httpd state=latest
+
+- name: Httpd is service start
+  sudo: yes
+  service: name=httpd state=running enabled=yes
+
+- name: Configure apache
+  sudo: yes
+  template: src=httpd.conf.tpl dest=/etc/httpd/conf/httpd.conf
+  notify:
+   - restart httpd
+
+
