@@ -133,7 +133,7 @@ KeepAliveTimeout 15
 # prevent Apache from glomming onto all bound IP addresses (0.0.0.0)
 #
 #Listen 12.34.56.78:80
-Listen 8080
+Listen 80
 AddType application/x-httpd-php .php
 DirectoryIndex index.php index.html
 #
@@ -990,7 +990,7 @@ AddOutputFilter INCLUDES .shtml
         #
         # Use name-based virtual hosting.
         #
-        NameVirtualHost *:8080
+        NameVirtualHost *:80
         #
         # NOTE: NameVirtualHost cannot be used without a port specifier
         # (e.g. :80) if mod_ssl is being used, due to the nature of the
