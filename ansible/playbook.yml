@@ -2,10 +2,9 @@
 - hosts: all
   sudo: true
   vars:
-    servername: myApp.vb www.myApp.vb 192.168.33.40
     timezone: Asia/Tokyo
   vars_files:
-    - vars/common.yml
+    - vars/packages.yml
   roles:
     - init
     - apache
