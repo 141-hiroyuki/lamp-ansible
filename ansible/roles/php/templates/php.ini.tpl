@@ -1815,3 +1815,14 @@ ldap.max_links = -1
 ; Local Variables:
 ; tab-width: 4
 ; End:
+
+; xdebug install add after
+[zend]
+zend_extension="/usr/lib64/php/modules/xdebug.so"
+xdebug.remote_enable=On
+xdebug.remote_connect_back=On
+xdebug.remote_autostart=On
+xdebug.remote_host=192.168.33.40
+xdebug.remote_port=9000
+xdebug.max_nesting_level=1000
+xdebug.idekey="xdebug"
