@@ -1,4 +1,4 @@
-lamp_ansible
+lamp-ansible
 ================
 
 概要
